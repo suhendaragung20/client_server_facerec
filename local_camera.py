@@ -9,5 +9,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 client_socket.connect((host, 5005))
 
+print("Connected to Server")
+
 while True:
     a = 1
